@@ -123,8 +123,7 @@ USE_TZ = True
 import os
 STATIC_URL = '/static/'
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(file)))
-STATIC_URL = '/static/'
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
 
 # Extra lookup directories for collectstatic to find static files
