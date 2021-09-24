@@ -1,0 +1,1 @@
+web: gunicorn FooFun.wsgi
