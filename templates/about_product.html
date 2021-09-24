@@ -1,0 +1,34 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<div id="about" class="about-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+
+                        <h2 class="block-title" style="margin-top: 200px"> {{ product.name }} </h2>
+                        <h3>{{ product.description }}...</h3>
+
+                    </div>
+                    <div style='border-radius: 10%; '>
+                            <h1 class="price_" style="background-color: #e75b1e; padding: 10px; margin-top: 50px; width: 200px; text-align: center; border-radius: 10px; margin-right: 100px; z-index: 10"><b>Price: ${{ product.price }}</b></h1>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+
+                        <div class="about-images" >
+                            <img class="about-main" style="border-radius: 0" src="{{ product.imageURL }} ">
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+{% endblock %}
