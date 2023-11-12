@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$2ek6#qwyl6nrfu@yv73g(h&s3@qee2^$#-bakhxho0ayrno89
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['funnyfoodapp.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
